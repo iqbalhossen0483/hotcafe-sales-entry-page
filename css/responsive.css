@@ -1,0 +1,77 @@
+@media only screen and (max-width:1024px){
+    .wrapper{
+        width: 100%;
+    }
+    .product-wrap{
+        margin: 0 5px;
+    }
+}
+@media only screen and (max-width:768px){
+    .wrapper{
+        width: 100%;
+    }
+    .shop{
+        display: block;
+    }
+    .shop-name-wrap{
+        margin-bottom: 10px;
+    }
+    .product-wrap{
+        width: 50%;
+        display: inline;
+        margin-left: 0;
+    }
+    .product{
+        margin-right: 5px;
+    }
+    .amount-wrap{
+        width: 50%;
+        display: inline;
+    }
+    .amount{
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .wrapper, .fieldset, .shop-name-wrap, .product-wrap, .amount-wrap{
+        width: 100%;
+    }
+    .product{
+        margin-bottom: 10px;
+    }
+    .amount{
+        margin-bottom: 15px;
+    }
+    /* collection */
+    .collection{
+        display: block;
+    }
+    .collection-wrap{
+        margin-bottom: 20px;
+    }
+    .coll-amount{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .product-wrap{
+        display: block;
+        width: 100%;
+    }
+    .product{
+        width: 22%;
+    }
+    .amount{
+        width: 31%;
+    }
+}
+@media only screen and (max-width:320px){
+    .amount{
+        width: 30%;
+    }
+    .coll-amount, .due-amount{
+        width: 47%;
+    }
+}

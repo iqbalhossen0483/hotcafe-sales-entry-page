@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotcafe</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <section>
+        <!-- today's sale  -->
+        <div class="wrapper">
+            <fieldset class='fieldset'>
+                <legend>Today's Sale</legend>
+                <div id="display-of-today's-sale">
+                    <div class="shop">
+                        <div class="shop-name-wrap">
+                            <input class="shop-name" type="text" placeholder="Shop Name">
+                        </div>
+                        <div class="product-wrap">
+                            <select onchange="coffeePrice() ,displayTotalAmount()" id="coffee-price" class="product">
+                                <option value=""></option>
+                                <option value="S.P.C">S.P.C</option>
+                                <option value="P.C.C">P.C.C</option>
+                                <option value="P.C">P.C</option>
+                                <option value="N.P.C">N.P.C</option>
+                            </select>
+                            <select onchange="milkPrice() ,displayTotalAmount()" class="product" id="milk-tea">
+                                <option></option>
+                                <option value="P.T">P.T</option>
+                                <option value="R.T">R.T</option>
+                                <option value="Masala.T">Masala.T</option>
+                            </select>
+                            <select onchange="redTeaPrice(), displayTotalAmount()" class="product" id="red-tea">
+                                <option></option>
+                                <option value="Red.T">Red.T</option>
+                            </select>
+                            <select onchange="cupPrice() ,displayTotalAmount()" class="product" id="cup">
+                                <option></option>
+                                <option value="Cup">Cup</option>
+                                <option value="N.cup">N.cup</option>
+                                <option value="P.P">P.P</option>
+                            </select>
+                        </div>
+                        <div class="amount-wrap">
+                            <input id="total-sale" disabled class="amount" type="number" placeholder="Total">
+                            <input onkeyup="displayRemainingDue()" id="cash" class="amount" type="number"
+                                placeholder="Cash" required>
+                            <input id="due" disabled class="amount" type="number" placeholder="Due">
+                        </div>
+                    </div>
+                </div>
+                <div class="butn-wrap">
+                    <button id="add-todays-field">Add+</button>
+                </div>
+            </fieldset>
+        </div>
+
+        <!-- today's collection -->
+        <div class="wrapper">
+            <fieldset class="fieldset">
+                <legend>Today's Collection</legend>
+                <div id="display-of-collection">
+                    <div class="collection">
+                        <div class="shop-name-wrap">
+                            <input class="shop-name" type="text" placeholder="Shop Name">
+                        </div>
+                        <div class="collection-wrap">
+                            <input class="coll-amount" type="text" placeholder="Collection">
+                            <input disabled class="due-amount" type="text" placeholder="Remaining Due">
+                        </div>
+                    </div>
+                </div>
+                <div class="butn-wrap">
+                    <button id="add-collection-field">Add+</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
